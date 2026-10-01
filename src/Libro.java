@@ -12,8 +12,10 @@ public class Libro {
         this.titulo = titulo;
     }
 
-    public void agregarEjemplar(Ejemplar ejemplar) {
+    public Ejemplar agregarEjemplar(String codigo) {
+        Ejemplar ejemplar = new Ejemplar(codigo, this);
         ejemplares.add(ejemplar);
+        return ejemplar;
     }
 
     public String getIsbn() {
