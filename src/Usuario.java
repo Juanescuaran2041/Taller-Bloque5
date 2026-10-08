@@ -12,4 +12,12 @@ public abstract class Usuario {
     public String getNombre() {
         return nombre;
     }
+
+    public String getIdentificacion() {
+        return identificacion;
+    }
+
+    public String getCorreo() {
+        return correo;
+    }
 }
